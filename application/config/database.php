@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'eshop_vendor',
+	'hostname' => 'sql207.epizy.com',
+	'username' => 'epiz_33185488',
+	'password' => 'vggdM4m01Er9tU',
+	'database' => 'epiz_33185488_eshopdb',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

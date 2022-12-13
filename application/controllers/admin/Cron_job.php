@@ -36,10 +36,10 @@ class Cron_job extends CI_Controller
 
     public function reset_system_data()
     {
-        $mysqli = new mysqli('localhost', 'root', '', 'eshop_vendor');
+        $mysqli = new mysqli('sql207.epizy.com', 'epiz_33185488', 'vggdM4m01Er9tU', 'epiz_33185488_eshopdb');
         if (mysqli_connect_errno())
             return false;
-        $query = file_get_contents(base_url('eshop_vendor.sql'));
+        $query = file_get_contents(base_url('epiz_33185488_eshopdb.sql'));
         if ($mysqli->multi_query($query)) {
             delete_files(FCPATH . 'uploads/media', true);
             $zip = new ZipArchive;
